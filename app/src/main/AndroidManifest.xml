@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.gms.samples.vision.ocrreader"
+    android:installLocation="auto">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_app"
+        android:label="Blind Reader"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".view.StartActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".view.OcrCaptureActivity"
+            android:label="Read Text">
+
+        </activity>
+
+        <activity
+            android:name=".view.AboutActivity"
+            android:label="about"
+            android:parentActivityName=".view.StartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.StartActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.SignInActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.UsersActivity"
+            android:label="Users"
+            android:parentActivityName=".view.StartActivity">
+
+            <meta-data android:name="android.support.ACTIVITY_PARENT"
+                android:value=".StartActivity"/>
+        </activity>
+
+        <activity android:name=".view.ChatActivity"
+            android:label="Chats"
+            android:parentActivityName=".view.UsersActivity">
+
+            <meta-data android:name="android.support.ACTIVITY_PARENT"
+                android:value=".UsersActivity"/>
+        </activity>
+    </application>
+
+</manifest>

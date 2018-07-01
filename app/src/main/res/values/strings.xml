@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Ocr Detector Sample</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+
+    <string name="image_description">click to read the text</string>
+    <string name="tip">Welcome in OCR</string>
+    <string name="about_us"> Your app should make it easy for users to find their way back to the app\'s main screen. One simple way to do this is to provide an Up button on the app bar for all activities except the main one. When the user selects the Up button, the app navigates to the parent activity.This lesson shows you how to add an Up button to an activity by declaring the activity\'s parent in the manifest, and enabling the app bar\'s Up button.</string>
+
+    <string name="voice_camera_opened">OK Sir, camera app is opened</string>
+    <string name="voice_file_explorer_opened">OK Sir, file explorer is opened</string>
+    <string name="voice_try_again">Please try again</string>
+    <string name="background_description">main background image</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="hint_password">password</string>
+    <string name="hint_email">email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_image">user image</string>
+
+    <string name="speak_string">Play</string>
+    <string name="cancel">Cancel</string>
+    <string name="pause">Pause</string>
+</resources>

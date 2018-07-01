@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.nuance:speechkit-2.2.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/speechkit-2.2.4.aar/9ff2ffd02e812197ad999cfdf033bb2c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/speechkit-2.2.4.aar/9ff2ffd02e812197ad999cfdf033bb2c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nuance/speechkit/2.2.4/80b6c654df98a4ba1b01a3ca9cdf6c2b53d1a138/speechkit-2.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
